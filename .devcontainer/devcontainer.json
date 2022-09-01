@@ -1,0 +1,21 @@
+{
+    "name": "codetanks-dart-devcontainer",
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "ms-vscode-remote.remote-containers",
+        "Dart-Code.dart-code"
+    ],
+    "runArgs": [
+        "--network=host"
+    ],
+    "remoteUser": "developer",
+    "postCreateCommand": "git config --global --add safe.directory /home/developer/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder}/,target=/home/developer/workspace,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/developer/workspace"
+}
