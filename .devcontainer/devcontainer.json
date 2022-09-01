@@ -1,9 +1,6 @@
 {
     "name": "codetanks-dart-devcontainer",
-    "build": {
-        "context": ".",
-        "dockerfile": "Dockerfile"
-    },
+    "image": "ghcr.io/code-tanks/code-tanks-dart-devcontainer:latest",
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
     },
