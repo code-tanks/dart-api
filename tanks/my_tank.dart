@@ -9,9 +9,9 @@ class MyTank extends BaseTank {
   void run() {
     // TODO: implement run
   }
-  
+
   @override
-  void onEvent(EventType e, Map info) {
+  void onEvent(Map event) {
     // TODO: implement onEvent
   }
 }

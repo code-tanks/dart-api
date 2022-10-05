@@ -7,7 +7,7 @@ class DoNothingTank extends BaseTank {
   }
 
   @override
-  void onEvent(EventType e, Map info) {
+  void onEvent(Map event) {
     commands.add(Command.NONE);
   }
 }

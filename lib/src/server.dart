@@ -41,9 +41,7 @@ Future<Response> request_commands_by_event(
     BaseTank bot, Request request) async {
   final event = jsonDecode(await request.readAsString());
 
-  final eventType = EventType.values[event['event_type']];
-
-  bot.onEvent(eventType, event['info']);
+  bot.onEvent(event);
 
   final json = commandsToJson(bot.commands);
 
