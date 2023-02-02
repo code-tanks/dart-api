@@ -30,6 +30,7 @@ jobs:
           context: .devcontainer/
           file: .devcontainer/Dockerfile
           push: true
+          platforms: linux/arm64, linux/amd64
           tags: ghcr.io/code-tanks/code-tanks-dart-devcontainer:latest
           cache-from: type=registry,ref=ghcr.io/code-tanks/code-tanks-dart-devcontainer:buildcache
           cache-to: type=registry,ref=ghcr.io/code-tanks/code-tanks-dart-devcontainer:buildcache,mode=max
