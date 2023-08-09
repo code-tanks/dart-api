@@ -21,4 +21,6 @@ class Command {
   static const UNLOCK_GUN = 1 << 10;
   static const LOCK_RADAR = 1 << 11;
   static const UNLOCK_RADAR = 1 << 12;
+  static const REQUEST_INFO = 1 << 13;
+  static const CLEAR_COMMANDS = 1 << 14;
 }
